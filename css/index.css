@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body ul,
+body li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(50px, auto) 1fr minmax(100px, auto);
+      grid-template-rows: minmax(50px, auto) 1fr minmax(100px, auto);
+  height: 100vh;
+}
+
+header {
+  border: 1px solid orangered;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+  overflow-y: hidden;
+}
+
+main nav {
+  border: 1px solid orange;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+main .content {
+  border: 1px solid blue;
+  overflow-y: scroll;
+}
+
+footer {
+  border: 1px solid green;
+}

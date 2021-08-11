@@ -1,0 +1,43 @@
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	ul,
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.wrapper {
+	display: grid;
+	grid-template-rows: minmax(50px, auto) 1fr minmax(100px, auto);
+	height: 100vh;
+}
+header{
+	border: 1px solid orangered;
+}
+
+main{
+	display: grid;
+	grid-template-columns: 200px auto;
+
+	overflow-y:hidden;
+	
+	nav{
+		border: 1px solid orange ;
+		height: 100%;
+		
+		overflow-y:scroll;
+	}
+
+	.content{
+		border: 1px solid blue;
+		overflow-y:scroll;
+	}
+}
+
+footer{
+	border: 1px solid green;
+}
